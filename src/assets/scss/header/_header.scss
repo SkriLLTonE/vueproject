@@ -1,0 +1,38 @@
+.header {
+    background: #3e62f2;
+    color: white;
+    padding: 20px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 25px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        &__list {
+            color: aliceblue;
+            &-link{
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .header__wrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+  }
